@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VistaFly - Professional aerial drone services for real estate, commercial projects, and private productions">
+    
+    <!-- Additional SEO Meta Tags for Search Results -->
+<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="VistaFly - Reshaping Perspective">
+<meta property="og:description" content="VistaFly provides dynamic FPV drone videography and aerial photography services, specializing in immersive visuals for real estate, marketing, and high-impact media.">
+<meta property="og:image" content="https://vistafly.services/images/og-image.png">
+<meta property="og:url" content="https://vistafly.services">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VistaFly">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VistaFly - FPV Drone Videography & Aerial Photography">
+<meta name="twitter:description" content="Capture cinematic visuals with VistaFly’s expert FPV drone services — ideal for real estate, creative content, and marketing. Elevate your brand’s perspective.">
+<meta name="twitter:image" content="https://vistafly.services/images/twitter-card.png">
+
+<!-- Additional Schema.org markup for better search visibility -->
+<meta itemprop="name" content="VistaFly">
+<meta itemprop="description" content="VistaFly is a professional FPV drone service offering high-quality aerial videography and photography for real estate, marketing, and storytelling.">
+<meta itemprop="image" content="https://vistafly.services/images/logo-512x512.png">
+<title>VistaFly | FPV Drone Services</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="VistaFly" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Terms of Service Modal -->
+<div id="termsModal" class="modal" style="display:none;">
+  <div class="modal-content" style="max-width:800px; max-height:90vh;">
+    <button class="close-modal" onclick="closeTermsModal()">&times;</button>
+    <div class="modal-body terms-content" style="padding:2rem; color:var(--white); overflow-y:auto; max-height:75vh;">
+      <h1 style="color:var(--accent); margin-bottom:1rem;">Terms of Service</h1>
+      <p style="margin-bottom:2rem;"><em>Last updated: May 26, 2025</em></p>
+
+      <p>Welcome to VistaFly! These Terms of Service ("Terms") govern your access to and use of our website and services. By using our site, you agree to be bound by these Terms. If you do not agree, do not use the site.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">1. ACCEPTANCE OF TERMS</h2>
+      <p style="margin-bottom:2rem;">By accessing or using the VistaFly website, you confirm that you are at least 18 years old or have legal parental consent, and that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">2. SERVICES PROVIDED</h2>
+      <p style="margin-bottom:2rem;">VistaFly provides aerial photography, videography, and FPV drone services. All services are subject to availability and may be modified or discontinued without notice.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">3. USER RESPONSIBILITIES</h2>
+      <p style="margin-bottom:1rem;">You agree not to:</p>
+      <ul style="margin-bottom:2rem; padding-left:1.5rem;">
+        <li style="margin-bottom:0.5rem;">Violate any laws or regulations</li>
+        <li style="margin-bottom:0.5rem;">Attempt to interfere with the security or operation of the website</li>
+        <li style="margin-bottom:0.5rem;">Upload or distribute any harmful or unauthorized content</li>
+        <li style="margin-bottom:1rem;">Use our services for any unlawful or unauthorized purpose</li>
+      </ul>
+      <p style="margin-bottom:2rem;">You are responsible for any content you submit and for maintaining the confidentiality of any login credentials you use.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">4. INTELLECTUAL PROPERTY</h2>
+      <p style="margin-bottom:2rem;">All content, logos, media, and technology used on this website are the property of VistaFly or its licensors and are protected under intellectual property laws. You may not copy, reproduce, modify, or distribute any part of the website without written permission.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">5. PAYMENTS AND BOOKINGS</h2>
+      <p style="margin-bottom:2rem;">Payment terms for drone services will be outlined in individual service agreements. Unless otherwise specified, all payments are final and non-refundable once a booking is confirmed.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">6. LIMITATION OF LIABILITY</h2>
+      <p style="margin-bottom:1rem;">VistaFly is not liable for any indirect, incidental, or consequential damages arising from the use or inability to use our services. We make no warranties regarding the accuracy or reliability of our content or services.</p>
+      <p style="margin-bottom:2rem;">Use of our services is at your own risk. We do not guarantee that the website will be uninterrupted, secure, or error-free.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">7. CANCELLATION & TERMINATION</h2>
+      <p style="margin-bottom:2rem;">We reserve the right to cancel or refuse service to anyone at our discretion. You may terminate your use of the site at any time. We may suspend or terminate your access if you violate these Terms.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">8. THIRD-PARTY LINKS</h2>
+      <p style="margin-bottom:2rem;">Our site may contain links to third-party websites or services. VistaFly is not responsible for the content or privacy practices of those third parties.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">9. GOVERNING LAW</h2>
+      <p style="margin-bottom:2rem;">These Terms are governed by the laws of the State of California, without regard to its conflict of laws rules. Any disputes shall be handled in the appropriate courts of Fresno County, California.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">10. CHANGES TO TERMS</h2>
+      <p style="margin-bottom:2rem;">We reserve the right to update or modify these Terms at any time. Continued use of the site after changes constitutes your acceptance of the revised Terms.</p>
+
+      <h2 style="color:var(--accent); margin:1.5rem 0 1rem;">11. CONTACT US</h2>
+      <p style="margin-bottom:1rem;">If you have any questions about these Terms, please contact:</p>
+      <p style="margin-bottom:0.5rem;">VistaFly</p>
+      <p>Email: <a href="mailto:vistafly.services@gmail.com" style="color:var(--accent);">vistafly.services@gmail.com</a></p>
+    </div>
+  </div>
+</div>
+<!-- Privacy Policy Modal -->
+<div id="privacyModal" class="modal" style="display:none;">
+  <div class="modal-content" style="max-width:800px; max-height:90vh;">
+    <button class="close-modal" onclick="closePrivacyModal()">&times;</button>
+    <div class="modal-body privacy-content" style="padding:2rem; color:var(--white); overflow-y:auto; max-height:75vh;">
+      <h1 style="color:var(--accent); margin-bottom:1rem;">Privacy Policy</h1>
+      <p style="margin-bottom:2rem;"><em>Last updated: May 26, 2025</em></p>
+
+      <p style="margin-bottom:2rem;">VistaFly ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. By using our website, you consent to the practices described below.</p>
+
+      <h2 style="color:var(--accent);margin:1.5rem 0 1rem;">1. Information We Collect</h2>
+      <p style="margin-bottom:1rem;">We may collect the following types of information:</p>
+
+      <h3 style="margin:1rem 0 0.5rem;">a. Personal Information</h3>
+      <p style="margin-bottom:1rem;">When you contact us, fill out a form, or request services, we may collect personal information such as your name, email address, phone number, and any other information you provide.</p>
+
+      <h3 style="margin:1rem 0 0.5rem;">b. Usage Data</h3>
+      <p style="margin-bottom:1rem;">We may automatically collect certain information about your device and browsing activity. This may include your IP address, browser type, referring URLs, pages visited, and access times.</p>
+
+      <h3 style="margin:1rem 0 0.5rem;">c. Cookies and Tracking Technologies</h3>
+      <p style="margin-bottom:2rem;">We may use cookies and similar tracking technologies to enhance user experience and analyze site traffic.</p>
+
+      <h2 style="color:var(--accent);margin:1.5rem 0 1rem;">2. How We Use Your Information</h2>
+      <p style="margin-bottom:1rem;">We use the information we collect for various purposes, including:</p>
+      <ul style="margin-bottom:2rem;padding-left:1.5rem;">
+        <li style="margin-bottom:0.5rem;">To provide and manage our services</li>
+        <li style="margin-bottom:0.5rem;">To respond to inquiries and customer service requests</li>
+        <li style="margin-bottom:0.5rem;">To improve and optimize our website and offerings</li>
+        <li style="margin-bottom:0.5rem;">To comply with legal obligations</li>
+        <li>To communicate with you, including marketing communications (if you have opted in)</li>
+      </ul>
+
+      <h2 style="color:var(--accent);margin:1.5rem 0 1rem;">3. Sharing of Information</h2>
+      <p style="margin-bottom:1rem;">We do not sell or rent your personal information. We may share your data with:</p>
+      <ul style="margin-bottom:2rem;padding-left:1.5rem;">
+        <li style="margin-bottom:0.5rem;">Service providers who help us operate our business (e.g., web hosting, analytics)</li>
+        <li style="margin-bottom:0.5rem;">Government authorities when required by law or in response to legal process</li>
+        <li>Affiliated entities under common ownership or control, solely for operational purposes</li>
+      </ul>
+
+      <h2 style="color:var(--accent);margin:1.5rem 0 1rem;">4. Your Rights and Choices</h2>
+      <p style="margin-bottom:1rem;">Depending on your location, you may have rights regarding your personal information, including:</p>
+      <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+        <li style="margin-bottom:0.5rem;">Accessing or updating your data</li>
+        <li style="margin-bottom:0.5rem;">Requesting deletion of your data</li>
+        <li style="margin-bottom:0.5rem;">Objecting to or restricting certain processing activities</li>
+        <li style="margin-bottom:1rem;">Withdrawing consent for marketing or data collection (if previously given)</li>
+      </ul>
+      <p style="margin-bottom:2rem;">To exercise any of these rights, contact us at: <a href="mailto:vistafly.services@gmail.com" style="color:var(--accent);">vistafly.services@gmail.com</a></p>
+
+      <h2 style="color:var(--accent);margin:1.5rem 0 1rem;">5. Security</h2>
+      <p style="margin-bottom:2rem;">We use appropriate technical and organizational measures to protect your data. However, no system is 100% secure, and we cannot guarantee absolute security.</p>
+
+      <h2 style="color:var(--accent);margin:1.5rem 0 1rem;">6. Data Retention</h2>
+      <p style="margin-bottom:2rem;">We retain personal information only as long as necessary for business or legal purposes, in accordance with applicable laws.</p>
+
+      <h2 style="color:var(--accent);margin:1.5rem 0 1rem;">7. Children's Privacy</h2>
+      <p style="margin-bottom:2rem;">Our website is not intended for children under the age of 13. We do not knowingly collect information from children.</p>
+
+      <h2 style="color:var(--accent);margin:1.5rem 0 1rem;">8. Changes to This Privacy Policy</h2>
+      <p style="margin-bottom:2rem;">We may update this Privacy Policy from time to time. Updates will be posted on this page with the revised date.</p>
+
+      <h2 style="color:var(--accent);margin:1.5rem 0 1rem;">9. Contact Us</h2>
+      <p style="margin-bottom:1rem;">If you have any questions or concerns about this Privacy Policy or our data practices, please contact:</p>
+      <p style="margin-bottom:0.5rem;">VistaFly</p>
+      <p>Email: <a href="mailto:vistafly.services@gmail.com" style="color:var(--accent);">vistafly.services@gmail.com</a></p>
+    </div>
+  </div>
+</div>
+<div id="bookNowModal" class="modal">
+  <div class="modal-wrapper" style="
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    width: 90vw;
+    max-width: 900px;
+    height: auto;
+    max-height: 80vh;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+  ">
+    <button id="closeBookNowModal" aria-label="Close" style="
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 10;
+    ">&times;</button>
+
+    <iframe 
+      src="https://forms.fillout.com/t/h9F1jaUzayus" 
+      style="
+        width: 100%;
+        height: 70vh;
+        min-height: 500px;
+        border: none;
+      "
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo-crop-container">
+            <img src="https://s14.gifyu.com/images/bxbYz.gif" alt="VistaFly Logo" class="logo-crop-img" />
+        </div>
+    <div class="nav-center-container">
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Connect</a>
+    </div>
+    <!-- Mobile Book Now Button -->
+    <button class="mobile-book-now" id="mobileBookNowBtn">
+        <i class="fas fa-calendar-alt"></i> Book Now
+    </button>
+</div>
+<div id="bookNowModal" class="modal-overlay">
+  <div class="modal-container">
+    <button class="modal-close" id="modalCloseBtn">&times;</button>
+    <iframe 
+      src="https://forms.fillout.com/t/h9F1jaUzayus" 
+      class="booking-iframe"
+      title="Booking Form"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
+</div>
+        <div class="nav-right">
+            <button class="cta-button" id="bookNowBtn">Book Now</button>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="video-background">
+        <iframe
+    class="youtube-bg"
+    id="heroVideo"
+    src="https://www.youtube.com/embed/IJtmkqdW6mA?enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=IJtmkqdW6mA&controls=0&vq=hd1080"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    aria-hidden="true"
+    loading="lazy"
+></iframe>
+</div>
+<div class="hero-content" data-aos="fade-up">
+</div>
+</section>
+
+<!-- Before </footer> add: -->
+<div class="video-mirror"></div>
+    <!-- Services Section -->
+    <section class="services" id="services">
+    <div class="effect-wrapper"></div>
+    <h2 class="section-title">What We Offer</h2>
+        <p class="section-subtitle">Professional aerial solutions for your needs</p>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card" data-aos-delay="100">
+                <div class="service-card-inner">
+                    <div class="service-card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+            </div>
+                        <h3>Real Estate Walkthroughs</h3>
+                        <p>Immersive Property Tours</p>
+                    </div>
+                    <div class="service-card-back">
+                        <h3>First-Person-View</h3>
+                        <p>Give buyers the feeling of stepping inside for the very first time—without ever being there.</p>
+                        <ul>
+                            <li>Stunning 4K cinematic footage</li>
+                            <li>Boost interest and stand out</li>
+                            <li>Custom 3D text animations to highlight key features</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card" data-aos-delay="200">
+                <div class="service-card-inner">
+                    <div class="service-card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Project Tracking</h3>
+                        <p>Monitor and showcase progress</p>
+                    </div>
+                    <div class="service-card-back">
+                        <h3>Ongoing Updates</h3>
+                        <p>Eye-catching aerial content to make your projects irresistible to clients</p>
+                        <ul>
+                            <li>Showcase scale & professionalism</li>
+                            <li>Strengthen your company’s image</li>
+                            <li>Turn progress into marketing power</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card" data-aos-delay="300">
+                <div class="service-card-inner">
+                    <div class="service-card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase" aria-hidden="true"></i>
+                        </div>
+                        <h3>Business Showcasing</h3>
+                        <p>Get noticed in your market</p>
+                    </div>
+                    <div class="service-card-back">
+                        <h3>Your Brand—Spotlighted</h3>
+                        <p>Make your location and services hard to miss—both online and off.</p>
+                        <ul>
+                            <li>Highlight storefronts and venues</li>
+                            <li>Drive foot and web traffic</li>
+                            <li>Boost your brand presence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card" data-aos-delay="400">
+                <div class="service-card-inner">
+                    <div class="service-card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-film" aria-hidden="true"></i>
+                        </div>
+                        <h3>Private Productions</h3>
+                        <p>Your vision, professionally captured</p>
+            </div>
+            <div class="service-card-back">
+                        <h3>Custom Visual Projects</h3>
+                        <p>From car shoots to private events, we deliver exactly what you envision—on time, and on point.</p>
+                        <ul>
+                            <li>Car & Bike Productions</li>
+                            <li>Event coverage</li>
+                            <li>Tailored creative solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio" style="padding: 8rem 10% 6rem;">
+    <div class="effect-wrapper"></div>
+    <h2 class="section-title">Flight Log</h2>
+        <p class="section-subtitle">Real projects — Elevated perspectives</p>
+
+        <div class="portfolio-filter">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="real-estate">Real Estate</button>
+            <button class="filter-button" data-filter="commercial">Commercial</button>
+            <button class="filter-button" data-filter="private">Private</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- Video 1 - Eppies Range -->
+<div class="portfolio-item" data-category="real-estate">
+    <div class="video-container" data-youtube-id="dqb8kGqAROM">
+        <img class="video-thumbnail" src="https://img.youtube.com/vi/dqb8kGqAROM/maxresdefault.jpg" alt="Eppies Range" loading="lazy">
+        <div class="play-button" aria-label="Play Eppies Range video"><i class="fas fa-play" aria-hidden="true"></i></div>
+    </div>
+    <div class="portfolio-overlay">
+        <h3>Eppies Range</h3>
+        <p>Real Estate</p>
+    </div>
+</div>
+
+<!-- Video 2 - About Us -->
+<div class="portfolio-item" data-category="commercial">
+    <div class="video-container" data-youtube-id="IJtmkqdW6mA">
+        <img class="video-thumbnail" src="https://img.youtube.com/vi/IJtmkqdW6mA/maxresdefault.jpg" alt="About Us" loading="lazy">
+        <div class="play-button" aria-label="Play About Us video"><i class="fas fa-play" aria-hidden="true"></i></div>
+    </div>
+    <div class="portfolio-overlay">
+        <h3>About Us</h3>
+        <p>Commercial</p>
+    </div>
+</div>
+
+<!-- Video 3 - Luxury Home Tour -->
+<div class="portfolio-item" data-category="real-estate">
+    <div class="video-container" data-youtube-id="3Xbxoqea_1k">
+        <img class="video-thumbnail" src="https://img.youtube.com/vi/3Xbxoqea_1k/maxresdefault.jpg" alt="Luxury Home Tour" loading="lazy">
+        <div class="play-button" aria-label="Play Luxury Home Tour video"><i class="fas fa-play" aria-hidden="true"></i></div>
+    </div>
+    <div class="portfolio-overlay">
+        <h3>Green House</h3>
+        <p>Real Estate</p>
+    </div>
+</div>
+
+<!-- Video 4 - Madera Blossom -->
+<div class="portfolio-item" data-category="private">
+    <div class="video-container" data-youtube-id="tL1dBZvHe3I">
+        <img class="video-thumbnail" src="https://img.youtube.com/vi/tL1dBZvHe3I/maxresdefault.jpg" alt="Madera Blossom" loading="lazy">
+        <div class="play-button" aria-label="Play Madera Blossom video"><i class="fas fa-play" aria-hidden="true"></i></div>
+    </div>
+    <div class="portfolio-overlay">
+        <h3>Madera Blossom</h3>
+        <p>Private</p>
+    </div>
+</div>
+
+<!-- Video 5 - The Hoopty -->
+<div class="portfolio-item" data-category="private">
+    <div class="video-container" data-youtube-id="qzzYf86tThk">
+        <img class="video-thumbnail" src="https://img.youtube.com/vi/qzzYf86tThk/maxresdefault.jpg" alt="The Hoopty" loading="lazy">
+        <div class="play-button" aria-label="Play The Hoopty video"><i class="fas fa-play" aria-hidden="true"></i></div>
+    </div>
+    <div class="portfolio-overlay">
+        <h3>The Hoopty</h3>
+        <p>Private</p>
+    </div>
+</div>
+
+<!-- Video 6 - Train Ride -->
+<div class="portfolio-item" data-category="commercial">
+    <div class="video-container" data-youtube-id="ZVIDyRiocBk">
+        <img class="video-thumbnail" src="https://img.youtube.com/vi/ZVIDyRiocBk/maxresdefault.jpg" alt="Train Ride" loading="lazy">
+        <div class="play-button" aria-label="Play Train Ride video"><i class="fas fa-play" aria-hidden="true"></i></div>
+    </div>
+    <div class="portfolio-overlay">
+        <h3>Train Ride</h3>
+        <p>Commercial</p>
+    </div>
+</div>
+        </div>
+    </section>
+
+   <!-- Video Modal -->
+<div class="modal" id="video-modal" aria-hidden="true">
+  <div class="video-modal-wrapper">
+    <div class="video-container-immersive">
+      <div id="youtube-player"></div>
+    </div>
+  </div>
+</div>
+ <!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="effect-wrapper"></div>
+    <div class="section-header">
+        <h2 class="section-title">Link with Us !</h2>
+        <p class="section-subtitle">It all starts with a signal — we’re locked in</p>
+    </div>
+
+    <div class="contact-container">
+        <!-- Contact Info Column -->
+        <div class="contact-info">
+            <div class="contact-content">
+                <h3 class="contact-heading">Contact Details</h3>
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <i class="fas fa-phone-alt contact-icon" aria-hidden="true"></i>
+                        <a href="tel:+15597367109" style="color: inherit; text-decoration: none;">(559) 736-7109</a>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-envelope contact-icon" aria-hidden="true"></i>
+                        <a href="mailto:vistafly.services@gmail.com" style="color: inherit; text-decoration: none;">vistafly.services@gmail.com</a>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fab fa-linkedin-in contact-icon" aria-hidden="true"></i>
+                        <span><a href="https://www.linkedin.com/in/carlos-martin-050876314/" target="_blank" class="social-hover">Connect on LinkedIn</a></span>
+                    </div>
+                </div>
+
+                <h3 class="social-heading">Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/vistafly.services/" aria-label="Instagram" class="social-link">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61576360152804" aria-label="Facebook" class="social-link">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@vista_fpv" aria-label="TikTok" class="social-link">
+                        <i class="fab fa-tiktok" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCoKwdzos1yh_sMp2gnih-jw" aria-label="YouTube" class="social-link">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/107264105/" aria-label="LinkedIn" class="social-link">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="contact-form">
+            <form id="contactForm" action="https://hook.us2.make.com/5ldbu8c4acuv1dot3tt4orwfb1cycf4z" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error">Please enter your name</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error">Please enter a valid email</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="real-estate">Real Estate </option>
+                        <option value="construction">Bussiness Promotion</option>
+                        <option value="commercial">Event</option>
+                        <option value="private">Precision Air Mapping</option>
+                        <option value="private">Custom Project</option>
+                        <option value="private">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="error-message" id="message-error">Please enter your message</div>
+                </div>
+
+                <button type="submit" class="cta-button connect-button">Transmit</button>
+            </form>
+        </div>
+    </div>
+</section>​
+<!-- Form Success Modal -->
+<div id="formSuccessModal" class="success-modal">
+  <div class="success-modal-content">
+    <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+    <div class="success-message">
+      <h3>Message Landed Safely!</h3>
+      <p>It's now in VistaFly airspace.<br>We'll be in touch shortly.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Error Modal -->
+<div id="errorModal" class="error-modal">
+  <div class="error-modal-content">
+    <div class="error-icon"><i class="fas fa-exclamation-circle"></i></div>
+    <div class="error-message">
+      <h3>Transmission Failed!</h3>
+      <p>Your message didn't reach our airspace.<br>Please try again.</p>
+    </div>
+  </div>
+</div>
+<!-- Add this AFTER your contact section but BEFORE your footer -->
+<section class="faa-certification" id="faa-certified">
+    <div class="effect-wrapper"></div> <!-- Added this line -->
+    <div class="certification-hero">
+        <div class="faa-badge">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+       <h2>FAA Part-107 Certified Pilot</h2>
+        <p>Licensed. Insured. Trusted.</p>
+    </div>
+    <div class="certification-content">
+        <h3>Professional Drone Operations You Can Count On</h3>
+<div class="benefits-grid">
+    <div class="benefit-card">
+        <i class="fas fa-user-shield"></i>
+        <h4>FAA Certified & Compliant</h4>
+        <p>Part 107 certification ensures every flight meets federal aviation standards and regulations.</p>
+    </div>
+</div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="footer-logo">VistaFly</div>
+            <p class="footer-tagline">"We don’t just fly drones — we reshape perspective"</p>
+        </div>
+
+        <div class="footer-grid">
+            <div class="footer-nav">
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#home" class="footer-link hover-effect">Home</a></li>
+                    <li><a href="#services" class="footer-link hover-effect">Services</a></li>
+                    <li><a href="#portfolio" class="footer-link hover-effect">Portfolio</a></li>
+                    <li><a href="#contact" class="footer-link hover-effect">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-legal">
+                <h4 class="footer-title">Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link hover-effect" onclick="openPrivacyModal()">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link hover-effect" onclick="openTermsModal(); return false;">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4 class="footer-title">Connect With Us</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/vistafly.services/" aria-label="Instagram" class="social-link">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61576360152804" aria-label="Facebook" class="social-link">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@vista_fpv" aria-label="TikTok" class="social-link">
+                        <i class="fab fa-tiktok" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/107264105/" aria-label="LinkedIn" class="social-link">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCoKwdzos1yh_sMp2gnih-jw" aria-label="YouTube" class="social-link">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2025 VistaFly Services. All rights reserved.
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
+  <!-- Scripts -->
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

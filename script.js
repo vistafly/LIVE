@@ -1614,3 +1614,79 @@ if (!document.getElementById('video-autoscroll-css')) {
     document.head.appendChild(style);
 }
 console.log("Current LA Time:", laTime); // e.g., "Thursday, June 5, 2025, 02:30 PM PDT"
+
+// Pricing Carousel
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.pricing-carousel-track');
+    const cards = document.querySelectorAll('.pricing-card');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    if (!track || cards.length === 0) return;
+    
+    let currentSlide = 0;
+    const totalSlides = cards.length;
+    
+    function updateCarousel() {
+        cards.forEach((card, index) => {
+            card.classList.remove('active', 'prev');
+            
+            if (index === currentSlide) {
+                card.classList.add('active');
+            } else if (index < currentSlide) {
+                card.classList.add('prev');
+            }
+        });
+        
+        // Update dots
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+    }
+    
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateCarousel();
+    }
+    
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+    
+    dots.forEach(dot => {
+        dot.addEventListener('click', function() {
+            currentSlide = parseInt(this.getAttribute('data-slide'));
+            updateCarousel();
+        });
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') prevSlide();
+        if (e.key === 'ArrowRight') nextSlide();
+    });
+    
+    // Touch/swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    track.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    track.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) nextSlide();
+        if (touchEndX > touchStartX + 50) prevSlide();
+    }
+});

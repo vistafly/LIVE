@@ -220,11 +220,12 @@
         </div>
     <div class="nav-center-container">
     <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Connect</a>
-    </div>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#pricing">Pricing</a> <!-- ADD THIS LINE -->
+    <a href="#contact">Connect</a>
+</div>
     <!-- Mobile Book Now Button -->
     <button class="mobile-book-now" id="mobileBookNowBtn">
         <i class="fas fa-calendar-alt"></i> Book Now
@@ -370,7 +371,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio" style="padding: 8rem 10% 6rem;">
+    <section class="portfolio" id="portfolio">
     <div class="effect-wrapper"></div>
     <h2 class="section-title">Flight Log</h2>
         <p class="section-subtitle">Real projects — Elevated perspectives</p>
@@ -465,6 +466,119 @@
     </div>
   </div>
 </div>
+<section class="pricing-section" id="pricing">
+    <div class="effect-wrapper"></div>
+    <h2 class="section-title">Pricing</h2>
+    <p class="section-subtitle">Flexible packages designed to fit your project needs</p>
+
+    <!-- Carousel Container -->
+    <div class="pricing-carousel">
+        <button class="carousel-btn prev-btn" aria-label="Previous package">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="pricing-carousel-track">
+            <!-- Photo Package -->
+            <div class="pricing-card active">
+                <div class="card-header">
+                    <h3 class="package-name">Photo Package</h3>
+                    <p class="package-type">Per Visit</p>
+                </div>
+                <div class="price">$100</div>
+                <ul class="features-list">
+                    <li>Before & after photography</li>
+                    <li>Professional editing</li>
+                    <li>Travel included</li>
+                    <li>High-resolution deliverables</li>
+                </ul>
+                <p class="add-on-note">Add video for +$50 per visit</p>
+            </div>
+
+            <!-- 3 Visit Bundle -->
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3 class="package-name">3 Visit Bundle</h3>
+                    <p class="package-type">Photo + Video</p>
+                </div>
+                <div class="price">$270</div>
+                <div class="price-per-visit">$90 per visit</div>
+                <div class="savings"><i class="fas fa-piggy-bank"></i> Save $80</div>
+                <ul class="features-list">
+                    <li>Complete photo package</li>
+                    <li>Drone video footage</li>
+                    <li>Visual editing included</li>
+                    <li>All travel covered</li>
+                </ul>
+            </div>
+
+            <!-- 5 Visit Bundle -->
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3 class="package-name">5 Visit Bundle</h3>
+                    <p class="package-type">Extended Project</p>
+                </div>
+                <div class="price">$425</div>
+                <div class="price-per-visit">$85 per visit</div>
+                <div class="savings"><i class="fas fa-piggy-bank"></i> Save $125</div>
+                <ul class="features-list">
+                    <li>Full photo & video package</li>
+                    <li>Priority turnaround</li>
+                    <li>Flexible scheduling</li>
+                    <li>Ideal for mid-length projects</li>
+                </ul>
+            </div>
+
+            <!-- 8 Visit Bundle -->
+            <div class="pricing-card featured-card">
+                <div class="bundle-badge">Popular</div>
+                <div class="card-header">
+                    <h3 class="package-name">8 Visit Bundle</h3>
+                    <p class="package-type">Large Scale Projects</p>
+                </div>
+                <div class="price">$640</div>
+                <div class="price-per-visit">$80 per visit</div>
+                <div class="savings"><i class="fas fa-piggy-bank"></i> Save $240</div>
+                <ul class="features-list">
+                    <li>Complete documentation package</li>
+                    <li>Start-to-finish coverage</li>
+                    <li>Up to 2 free reschedules</li>
+                    <li>Perfect for larger builds</li>
+                </ul>
+            </div>
+
+            <!-- 10 Visit Bundle -->
+            <div class="pricing-card">
+                <div class="bundle-badge">Best Value</div>
+                <div class="card-header">
+                    <h3 class="package-name">10 Visit Bundle</h3>
+                    <p class="package-type">Premium Package</p>
+                </div>
+                <div class="price">$750</div>
+                <div class="price-per-visit">$75 per visit</div>
+                <div class="savings"><i class="fas fa-piggy-bank"></i> Save $350</div>
+                <ul class="features-list">
+                    <li>Full premium package</li>
+                    <li>Locked-in rate (regional)</li>
+                    <li>Highlight recap reel (1-2 min)</li>
+                    <li>Long-term project support</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="carousel-btn next-btn" aria-label="Next package">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Carousel Dots -->
+    <div class="carousel-dots">
+        <button class="dot active" data-slide="0" aria-label="Go to package 1"></button>
+        <button class="dot" data-slide="1" aria-label="Go to package 2"></button>
+        <button class="dot" data-slide="2" aria-label="Go to package 3"></button>
+        <button class="dot" data-slide="3" aria-label="Go to package 4"></button>
+        <button class="dot" data-slide="4" aria-label="Go to package 5"></button>
+    </div>
+</section>
  <!-- Contact Section -->
 <section class="contact" id="contact">
     <div class="effect-wrapper"></div>

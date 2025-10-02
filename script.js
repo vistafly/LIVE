@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     
     // State management
-    let lastVolume = 100;
+    let lastVolume = 90;
     let isMuted = true;
     let hasUserInteracted = false;
     let isPlayerReady = false;

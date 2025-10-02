@@ -731,7 +731,7 @@ transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 .close-modal {
     position: absolute;
     top: 12px;
-    right: 12px;
+    right: 20px;
     background: #333;
     color: #fff;
     border: none;
@@ -1190,8 +1190,6 @@ footer.site-footer::after {
 
 /* Enhanced close button */
 .close-modal {
-  position: absolute;
-  top: -60px;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   border: 2px solid rgba(255, 255, 255, 0.1);
@@ -1292,8 +1290,8 @@ footer.site-footer::after {
 /* Ultra-wide Desktop - Maximum Cinematic Experience */
 @media (min-width: 1440px) {
   .modal-content {
-    max-width: 2200px;
-    width: 80%;
+    max-width: 900px;
+    width: 90%;
   }
   
   #youtube-player {
@@ -1542,7 +1540,7 @@ body.modal-open {
 /* Contact Section */
 section.contact {
     background-color: var(--dark-grey);
-    padding: 8rem 10% 6rem;
+    padding: 4rem 5% 4rem;
 }
 
 section.contact .section-header {
